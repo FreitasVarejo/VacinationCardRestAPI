@@ -12,11 +12,12 @@ namespace Application.Card.Queries.ListCard
     public class CardEntryDto
     {
         public Guid EntryId { get; set; }
-        public string VaccineName { get; set; }
-        public string VaccineCode { get; set; }
+        public string VaccineName { get; set; } = string.Empty;
+        public string VaccineCode { get; set; } = string.Empty;
         public DateTime Date { get; set; }
         public int DoseNumber { get; set; }
-        public string LotNumber { get; set; }
-        public string Notes { get; set; }
+        public string LotNumber { get; set; } = string.Empty;
+        public string Notes { get; set; } = string.Empty;
     }
+
 }

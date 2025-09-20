@@ -7,7 +7,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Application.People.Commands.RemovePerson
 {
-    public class RemovePersonHandler : IRequestHandler<RemovePersonCommand>
+    // ALTERE ESTA LINHA:
+    // public class RemovePersonHandler : IRequestHandler<RemovePersonCommand>
+    public class RemovePersonHandler : IRequestHandler<RemovePersonCommand, Unit>
     {
         private readonly IAppDbContext _db;
         public RemovePersonHandler(IAppDbContext db) => _db = db;
@@ -15,13 +17,12 @@ namespace Application.People.Commands.RemovePerson
         public async Task<Unit> Handle(RemovePersonCommand request, CancellationToken ct)
         {
             var person = await _db.People
-                .Include(p => p.Card)
-                .ThenInclude(c => c.Entries)
+                .Include(p => p.Card).ThenInclude(c => c.Entries)
                 .FirstOrDefaultAsync(p => p.Id == request.PersonId, ct);
 
             if (person != null)
             {
-                if (person.Card != null && person.Card.Entries.Any())
+                if (person.Card?.Entries?.Count > 0)
                     _db.Entries.RemoveRange(person.Card.Entries);
                 if (person.Card != null)
                     _db.Cards.Remove(person.Card);

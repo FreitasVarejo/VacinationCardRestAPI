@@ -1,8 +1,10 @@
-using System;
-using System.Threading.Tasks;
 using Application.Vaccines.Commands.RegisterVaccine;
+using System;
+using System.Collections.Generic; // se retornar listas
+using System.Threading.Tasks;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+
 
 namespace WebApi.Controllers
 {

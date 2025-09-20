@@ -27,6 +27,9 @@
 /home/freitaspinhe/Desktop/side_projects/VacinationCardRestAPI/src/WebApi/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll
 /home/freitaspinhe/Desktop/side_projects/VacinationCardRestAPI/src/WebApi/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
 /home/freitaspinhe/Desktop/side_projects/VacinationCardRestAPI/src/WebApi/bin/Debug/net9.0/Microsoft.OpenApi.dll
+/home/freitaspinhe/Desktop/side_projects/VacinationCardRestAPI/src/WebApi/bin/Debug/net9.0/Swashbuckle.AspNetCore.Swagger.dll
+/home/freitaspinhe/Desktop/side_projects/VacinationCardRestAPI/src/WebApi/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/home/freitaspinhe/Desktop/side_projects/VacinationCardRestAPI/src/WebApi/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll
 /home/freitaspinhe/Desktop/side_projects/VacinationCardRestAPI/src/WebApi/bin/Debug/net9.0/Application.dll
 /home/freitaspinhe/Desktop/side_projects/VacinationCardRestAPI/src/WebApi/bin/Debug/net9.0/Domain.dll
 /home/freitaspinhe/Desktop/side_projects/VacinationCardRestAPI/src/WebApi/bin/Debug/net9.0/Infrastructure.dll

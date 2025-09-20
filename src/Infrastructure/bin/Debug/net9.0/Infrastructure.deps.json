@@ -230,7 +230,8 @@
           "Domain": "1.0.0",
           "FluentValidation": "12.0.0",
           "FluentValidation.DependencyInjectionExtensions": "12.0.0",
-          "MediatR": "13.0.0"
+          "MediatR": "13.0.0",
+          "Microsoft.EntityFrameworkCore": "9.0.9"
         },
         "runtime": {
           "Application.dll": {

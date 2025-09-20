@@ -1,9 +1,11 @@
-using System;
-using System.Threading.Tasks;
 using Application.People.Commands.RegisterPerson;
 using Application.People.Commands.RemovePerson;
+using System;
+using System.Collections.Generic; // se retornar listas
+using System.Threading.Tasks;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+
 
 namespace WebApi.Controllers
 {

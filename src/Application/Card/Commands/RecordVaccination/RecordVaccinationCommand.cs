@@ -9,7 +9,7 @@ namespace Application.Card.Commands.RecordVaccination
         public Guid VaccineId { get; set; }
         public DateTime Date { get; set; }
         public int DoseNumber { get; set; }
-        public string LotNumber { get; set; }
-        public string Notes { get; set; }
+        public string LotNumber { get; set; } = string.Empty;
+        public string Notes { get; set; } = string.Empty;
     }
 }

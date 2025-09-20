@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "B2EK24s0lDk=",
+  "dgSpecHash": "sHoi73rEq1A=",
   "success": true,
   "projectFilePath": "/home/freitaspinhe/Desktop/side_projects/VacinationCardRestAPI/src/WebApi/WebApi.csproj",
   "expectedPackageFiles": [
@@ -13,6 +13,7 @@
     "/home/freitaspinhe/.nuget/packages/microsoft.entityframeworkcore.abstractions/9.0.9/microsoft.entityframeworkcore.abstractions.9.0.9.nupkg.sha512",
     "/home/freitaspinhe/.nuget/packages/microsoft.entityframeworkcore.analyzers/9.0.9/microsoft.entityframeworkcore.analyzers.9.0.9.nupkg.sha512",
     "/home/freitaspinhe/.nuget/packages/microsoft.entityframeworkcore.inmemory/9.0.9/microsoft.entityframeworkcore.inmemory.9.0.9.nupkg.sha512",
+    "/home/freitaspinhe/.nuget/packages/microsoft.extensions.apidescription.server/9.0.0/microsoft.extensions.apidescription.server.9.0.0.nupkg.sha512",
     "/home/freitaspinhe/.nuget/packages/microsoft.extensions.caching.abstractions/9.0.9/microsoft.extensions.caching.abstractions.9.0.9.nupkg.sha512",
     "/home/freitaspinhe/.nuget/packages/microsoft.extensions.caching.memory/9.0.9/microsoft.extensions.caching.memory.9.0.9.nupkg.sha512",
     "/home/freitaspinhe/.nuget/packages/microsoft.extensions.dependencyinjection/9.0.9/microsoft.extensions.dependencyinjection.9.0.9.nupkg.sha512",
@@ -25,7 +26,11 @@
     "/home/freitaspinhe/.nuget/packages/microsoft.identitymodel.jsonwebtokens/8.0.1/microsoft.identitymodel.jsonwebtokens.8.0.1.nupkg.sha512",
     "/home/freitaspinhe/.nuget/packages/microsoft.identitymodel.logging/8.0.1/microsoft.identitymodel.logging.8.0.1.nupkg.sha512",
     "/home/freitaspinhe/.nuget/packages/microsoft.identitymodel.tokens/8.0.1/microsoft.identitymodel.tokens.8.0.1.nupkg.sha512",
-    "/home/freitaspinhe/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512"
+    "/home/freitaspinhe/.nuget/packages/microsoft.openapi/1.6.25/microsoft.openapi.1.6.25.nupkg.sha512",
+    "/home/freitaspinhe/.nuget/packages/swashbuckle.aspnetcore/9.0.4/swashbuckle.aspnetcore.9.0.4.nupkg.sha512",
+    "/home/freitaspinhe/.nuget/packages/swashbuckle.aspnetcore.swagger/9.0.4/swashbuckle.aspnetcore.swagger.9.0.4.nupkg.sha512",
+    "/home/freitaspinhe/.nuget/packages/swashbuckle.aspnetcore.swaggergen/9.0.4/swashbuckle.aspnetcore.swaggergen.9.0.4.nupkg.sha512",
+    "/home/freitaspinhe/.nuget/packages/swashbuckle.aspnetcore.swaggerui/9.0.4/swashbuckle.aspnetcore.swaggerui.9.0.4.nupkg.sha512"
   ],
   "logs": []
 }

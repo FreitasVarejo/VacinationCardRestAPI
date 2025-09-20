@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Application.Card.Commands.DeleteEntry;
 using Application.Card.Commands.RecordVaccination;
+using Application.Card.Commands.DeleteEntry;
 using Application.Card.Queries.ListCard;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
