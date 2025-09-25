@@ -1,93 +1,51 @@
-## 📊 Diagrama de Classes (UML)
+# VaccinationCard API (C#/.NET 8)
+
+Sistema simples para gerenciar **cartão de vacinação**: cadastro de pessoas, vacinas e registros de vacinação, com rotas REST, **CQRS + MediatR**, **FluentValidation**, **EF Core** e **Swagger**.
+
+## Stack & Decisões
+- **Arquitetura:** Clean (Domain, Application, Infrastructure, API) + **CQRS (MediatR)**.
+- **Validação:** FluentValidation por request.
+- **Persistência:** EF Core com **SQLite** (dev). Suporte fácil a PostgreSQL/SQL Server.
+- **Docs/Tests manuais:** Swagger/OpenAPI em `/swagger`.
+
+## Estrutura de Pastas
+```
+src/
+  Api/                  # Controllers, DI, Swagger
+  Application/          # Commands/Queries + Handlers + Validators (MediatR/FluentValidation)
+  Domain/               # Entidades e regras puras
+  Infrastructure/       # DbContext, Mappings, Migrations
+tests/
+  Api.Tests/            # Testes (unit/integration)
+```
+
+## Modelo de Domínio
+- **Person**(PersonId, Name, DocumentId* único)
+- **Vaccine**(VaccineId, Name* único, ScheduleJson?)
+- **Vaccination**(VaccinationId, PersonId(FK), VaccineId(FK), DoseNumber≥1, DateApplied, Notes?)
+- Regras DB: `UNIQUE(PersonId, VaccineId, DoseNumber)`; **cascade** ao excluir Person.
 
 ```mermaid
 classDiagram
-    direction LR
-
-    class Person {
-      +UUID id
-      +String name
-      +Document docNumber
-      --
-      +getCard() VaccinationCard
-    }
-
-    class VaccinationCard {
-      +UUID id
-      +UUID personId
-      --
-      +addEntry(VaccinationEntry)
-      +removeEntry(entryId)
-      +listEntries() List<VaccinationEntry>
-    }
-
-    class Vaccine {
-      +UUID id
-      +String name
-      +String code
-      +DoseSchedule schedule
-    }
-
-    class VaccinationEntry {
-      +UUID id
-      +UUID vaccineId
-      +LocalDate date
-      +int doseNumber
-      +String lotNumber
-      +String notes
-      --
-      +isValidForSchedule(schedule) : bool
-    }
-
-    class DoseSchedule {
-      +int totalDoses
-      +List~int~ validDoseNumbers
-      +Map~int,int~ minIntervalDays
-      --
-      +validate(entry, priorEntries) : bool
-    }
-
-    class PersonRepository {
-      +save(Person)
-      +findById(id) : Person
-      +delete(id)
-    }
-
-    class VaccineRepository {
-      +save(Vaccine)
-      +findById(id) : Vaccine
-      +findByCode(code) : Vaccine
-    }
-
-    class CardRepository {
-      +save(VaccinationCard)
-      +findByPersonId(personId) : VaccinationCard
-      +deleteByPersonId(personId)
-    }
-
-    class VaccinationService {
-      +registerPerson(name, doc) : Person
-      +removePerson(personId)
-      +registerVaccine(name, code, schedule) : Vaccine
-      +recordVaccination(personId, vaccineId, date, dose, lot, notes) : VaccinationEntry
-      +listCard(personId) : List~VaccinationEntry~
-      +deleteEntry(personId, entryId)
-    }
-
-    class ValidationService {
-      +validateDose(vaccine, entry, priorEntries) : bool
-    }
-
-    %% Relações
-    Person "1" --> "1" VaccinationCard : possui
-    VaccinationCard "1" o-- "0..*" VaccinationEntry : agrega
-    VaccinationEntry "*" --> "1" Vaccine : refere
-    Vaccine "1" o-- "1" DoseSchedule : compõe
-
-    %% Serviços usam repositórios
-    VaccinationService ..> PersonRepository
-    VaccinationService ..> VaccineRepository
-    VaccinationService ..> CardRepository
-    VaccinationService ..> ValidationService
-    ValidationService ..> DoseSchedule
+  class Person {
+    Guid PersonId
+    string Name
+    string DocumentId
+  }
+  class Vaccine {
+    Guid VaccineId
+    string Name
+    string ScheduleJson
+  }
+  class Vaccination {
+    Guid VaccinationId
+    Guid PersonId
+    Guid VaccineId
+    int DoseNumber
+    DateTime DateApplied
+    string Notes
+  }
+  Person "1" --> "*" Vaccination
+  Vaccine "1" --> "*" Vaccination
 ```
+
