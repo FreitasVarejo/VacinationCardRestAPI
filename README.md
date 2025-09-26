@@ -1,4 +1,4 @@
-![.NET Build & Test](https://github.com/<seu-usuario>/<seu-repo>/actions/workflows/dotnet.yml/badge.svg)
+![.NET Build & Test](https://github.com/FreitasVarejo/VacinationCardRestAPI/actions/workflows/dotnet.yml/badge.svg)
 
 # VaccinationCard API (C# / .NET 9)
 
