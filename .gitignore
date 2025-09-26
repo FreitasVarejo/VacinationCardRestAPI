@@ -1,0 +1,84 @@
+### .NET / C# ###
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Roslyn cache
+*.ide/
+
+# Visual Studio files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/
+.history/
+*.code-workspace
+
+# NuGet
+*.nupkg
+*.snupkg
+*.nuspec
+*.psmdcp
+packages/
+*.dll
+*.exe
+
+# Test results
+TestResults/
+*.coverage
+*.coveragexml
+*.testsettings
+*.trx
+
+# Entity Framework
+Migrations/
+
+# Database files
+*.mdf
+*.ldf
+*.ndf
+*.db
+*.sqlite
+*.sqlite3
+
+### Docker ###
+# Docker build artifacts
+*.pid
+*.seed
+*.pid.lock
+*.log
+docker-compose.override.yml
+
+# Ignore local env files
+.env
+.env.*
+
+# Docker volumes / tmp
+.docker/
+**/docker-data/
+**/docker-volumes/
+
+### Makefile ###
+# Make intermediate files
+*.d
+*.o
+*.obj
+*.out
+*.a
+*.so
+*.lo
+*.la
+*.mod
+*.ko
+*.symvers
+*.order
+*.mod.c
+
+# Automatically generated dependency files
+*.deps
