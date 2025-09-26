@@ -1,0 +1,12 @@
+/home/freitaspinhe/Desktop/BTG_CS/VacinationCardRestAPI/src/Domain/bin/Debug/net9.0/Domain.deps.json
+/home/freitaspinhe/Desktop/BTG_CS/VacinationCardRestAPI/src/Domain/bin/Debug/net9.0/Domain.dll
+/home/freitaspinhe/Desktop/BTG_CS/VacinationCardRestAPI/src/Domain/bin/Debug/net9.0/Domain.pdb
+/home/freitaspinhe/Desktop/BTG_CS/VacinationCardRestAPI/src/Domain/obj/Debug/net9.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/freitaspinhe/Desktop/BTG_CS/VacinationCardRestAPI/src/Domain/obj/Debug/net9.0/Domain.AssemblyInfoInputs.cache
+/home/freitaspinhe/Desktop/BTG_CS/VacinationCardRestAPI/src/Domain/obj/Debug/net9.0/Domain.AssemblyInfo.cs
+/home/freitaspinhe/Desktop/BTG_CS/VacinationCardRestAPI/src/Domain/obj/Debug/net9.0/Domain.csproj.CoreCompileInputs.cache
+/home/freitaspinhe/Desktop/BTG_CS/VacinationCardRestAPI/src/Domain/obj/Debug/net9.0/Domain.sourcelink.json
+/home/freitaspinhe/Desktop/BTG_CS/VacinationCardRestAPI/src/Domain/obj/Debug/net9.0/Domain.dll
+/home/freitaspinhe/Desktop/BTG_CS/VacinationCardRestAPI/src/Domain/obj/Debug/net9.0/refint/Domain.dll
+/home/freitaspinhe/Desktop/BTG_CS/VacinationCardRestAPI/src/Domain/obj/Debug/net9.0/Domain.pdb
+/home/freitaspinhe/Desktop/BTG_CS/VacinationCardRestAPI/src/Domain/obj/Debug/net9.0/ref/Domain.dll
