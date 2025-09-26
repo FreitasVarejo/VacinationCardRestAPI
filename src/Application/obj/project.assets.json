@@ -832,7 +832,8 @@
       "FluentValidation >= 12.0.0",
       "FluentValidation.DependencyInjectionExtensions >= 12.0.0",
       "MediatR >= 13.0.0",
-      "Microsoft.EntityFrameworkCore >= 9.0.9"
+      "Microsoft.EntityFrameworkCore >= 9.0.9",
+      "Microsoft.EntityFrameworkCore.Abstractions >= 9.0.9"
     ]
   },
   "packageFolders": {
@@ -841,11 +842,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/freitaspinhe/Desktop/side_projects/VacinationCardRestAPI/src/Application/Application.csproj",
+      "projectUniqueName": "/home/freitaspinhe/Desktop/BTG_CS/VacinationCardRestAPI/src/Application/Application.csproj",
       "projectName": "Application",
-      "projectPath": "/home/freitaspinhe/Desktop/side_projects/VacinationCardRestAPI/src/Application/Application.csproj",
+      "projectPath": "/home/freitaspinhe/Desktop/BTG_CS/VacinationCardRestAPI/src/Application/Application.csproj",
       "packagesPath": "/home/freitaspinhe/.nuget/packages/",
-      "outputPath": "/home/freitaspinhe/Desktop/side_projects/VacinationCardRestAPI/src/Application/obj/",
+      "outputPath": "/home/freitaspinhe/Desktop/BTG_CS/VacinationCardRestAPI/src/Application/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/freitaspinhe/.nuget/NuGet/NuGet.Config"
@@ -861,8 +862,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "/home/freitaspinhe/Desktop/side_projects/VacinationCardRestAPI/src/Domain/Domain.csproj": {
-              "projectPath": "/home/freitaspinhe/Desktop/side_projects/VacinationCardRestAPI/src/Domain/Domain.csproj"
+            "/home/freitaspinhe/Desktop/BTG_CS/VacinationCardRestAPI/src/Domain/Domain.csproj": {
+              "projectPath": "/home/freitaspinhe/Desktop/BTG_CS/VacinationCardRestAPI/src/Domain/Domain.csproj"
             }
           }
         }
@@ -896,6 +897,10 @@
             "version": "[13.0.0, )"
           },
           "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[9.0.9, )"
+          },
+          "Microsoft.EntityFrameworkCore.Abstractions": {
             "target": "Package",
             "version": "[9.0.9, )"
           }

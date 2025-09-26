@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/freitaspinhe/Desktop/side_projects/VacinationCardRestAPI/src/Domain/Domain.csproj",
+      "projectUniqueName": "/home/freitaspinhe/Desktop/BTG_CS/VacinationCardRestAPI/src/Domain/Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "/home/freitaspinhe/Desktop/side_projects/VacinationCardRestAPI/src/Domain/Domain.csproj",
+      "projectPath": "/home/freitaspinhe/Desktop/BTG_CS/VacinationCardRestAPI/src/Domain/Domain.csproj",
       "packagesPath": "/home/freitaspinhe/.nuget/packages/",
-      "outputPath": "/home/freitaspinhe/Desktop/side_projects/VacinationCardRestAPI/src/Domain/obj/",
+      "outputPath": "/home/freitaspinhe/Desktop/BTG_CS/VacinationCardRestAPI/src/Domain/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/freitaspinhe/.nuget/NuGet/NuGet.Config"

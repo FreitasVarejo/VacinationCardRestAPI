@@ -1,18 +1,10 @@
-using System.Threading;
-using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using Domain.Entities;
+using VaccinationCard.Domain.Entities;
 
-namespace Application.Abstractions
+namespace VaccinationCard.Application.Abstractions;
+
+public interface IAppDbContext
 {
-    public interface IAppDbContext
-    {
-        DbSet<Person> People { get; }
-        DbSet<Vaccine> Vaccines { get; }
-        DbSet<DoseSchedule> DoseSchedules { get; }
-        DbSet<VaccinationCard> Cards { get; }
-        DbSet<VaccinationEntry> Entries { get; }
-
-        Task<int> SaveChangesAsync(CancellationToken ct = default);
-    }
+    DbSet<Person> Persons { get; }
+    Task<int> SaveChangesAsync(CancellationToken ct = default);
 }

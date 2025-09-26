@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BHKWs+GKBbs=",
+  "dgSpecHash": "qLOxjQs9S04=",
   "success": true,
-  "projectFilePath": "/home/freitaspinhe/Desktop/side_projects/VacinationCardRestAPI/src/Domain/Domain.csproj",
+  "projectFilePath": "/home/freitaspinhe/Desktop/BTG_CS/VacinationCardRestAPI/src/Domain/Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
