@@ -1,16 +1,3 @@
-Boa 👌, seu `README.md` já está bem estruturado. O que dá pra melhorar é:
-
-* **Deixar mais profissional** → badges reais (build/test, cobertura, Docker).
-* **Adicionar instruções Docker/Makefile** já que você containerizou.
-* **Explicar como rodar testes**.
-* **Seção de CI/CD** mostrando que existe pipeline GitHub Actions.
-* **Melhorar “Próximos passos”** pra virar um roadmap claro.
-
----
-
-### Sugestão de README atualizado
-
-```markdown
 ![.NET Build & Test](https://github.com/<seu-usuario>/<seu-repo>/actions/workflows/dotnet.yml/badge.svg)
 
 # VaccinationCard API (C# / .NET 9)
@@ -126,5 +113,3 @@ CI do GitHub também executa testes automaticamente a cada push/PR.
 
 ✍️ Autor: *Gabriel Freitas Pinheiro*
 📄 Licença: MIT
-
-```
